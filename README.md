@@ -47,8 +47,7 @@ This code pattern can later be used as the foundation to your required needs; th
 
 [Deploy the chaincode](#deploy-the-chaincode)
 
-[Invoke transactions and 
-es](#invoke-transactions-and-queries)
+[Invoke transactions and queries](#invoke-transactions-and-queries)
 
 [Enable CI/CD (optional)](#enable-cicd-optional)
 
