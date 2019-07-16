@@ -2,9 +2,9 @@
 
 This code pattern demonstrates an easy deployment of a chaincode from GitHub to a blockchain network setup on IBM Blockchain Platform for IBM Cloud Private on LinuxONE with simple continuous integration and continuous delivery (CI/CD) pipeline. 
 
-IBM Blockchain Platform for IBM Cloud Private is an offering based on Kubernetes, that simplifies deployment of essential elements of a blockchain network in your own infrastructure through IBM Cloud Private (ICP). There are many advantages running your blockchain networks on premises, such as increase security, robustness, locality of data and address of market regulation requirements.
+IBM Blockchain Platform for IBM Cloud Private is an offering based on Kubernetes, that simplifies deployment of essential elements of a blockchain network in your own infrastructure through IBM Cloud Private (ICP). There are many advantages to running your blockchain networks on premises, such as increased security, robustness, locality of data and the ability to address market regulation requirements.
 
-You will use a predefined and configured setup of blockchain network running on IBM Blockchain Platform for IBM Cloud Private on LinuxONE Community Cloud. The network is based on Hyperledger Fabric v1.2.1 and contains one orderer, two peers and three certificate authorities (CA).
+You will use a predefined and configured setup of a blockchain network running on IBM Blockchain Platform for IBM Cloud Private on the LinuxONE Community Cloud. The network is based on Hyperledger Fabric v1.2.1 and contains one orderer, two peers and three certificate authorities (CA).
 
 <p align="center">
   <img src="media/IBP4ICP-Blockchain-network-arch.png">
@@ -43,13 +43,13 @@ This code pattern can later be used as the foundation to your required needs; th
 # Steps
 [Provisioning IBM Blockchain Platform for ICP on LinuxONE Community Cloud](#provisioning-ibm-blockchain-platform-for-icp-on-linuxone-community-cloud)
 
-[Create your chaincode local GitHub repository](#create-your-local-chaincode-github-repository)
+[Create your local chaincode GitHub repository](#create-your-local-chaincode-github-repository)
 
 [Deploy the chaincode](#deploy-the-chaincode)
 
 [Invoke transactions and queries](#invoke-transactions-and-queries)
 
-[Enable CI/CD (optional)](#enable-ci-/-cd)
+[Enable CI/CD (optional)](#enable-cicd-optional)
 
 
 ## Provisioning IBM Blockchain Platform for ICP on LinuxONE Community Cloud
@@ -169,7 +169,7 @@ In this example we move 100 from entity ‘a’ to entity ‘b’.
 - Click the `Invoke` button
 - Inspect the result – a window will pop up with 'chaincode invoke successful'
 - Click on the `x` of the pop-up window to dismiss it
-- You can validate the transaction by quering again status of 'a' and confirm that the value is 0
+- You can validate the transaction by querying again status of 'a' and confirm that the value is 0
 
 **Congratulations! You have successfully performed transactions on your Blockchain network.**
 
@@ -179,7 +179,7 @@ In this code pattern we provide a minimal and simplistic example of CI/CD. In ou
 This example is for concept demonstration.
 
 For this step you will use **your own repo of the GitHub** to be able to deliver changes.
-If you already created it – please continue. Otherwise, go back and execute [Create your chaincode local GitHub repository](#create-your-chaincode-local-github-repository) and [Deploy the chaincode](Deploy-the-chaincode) and then return here.
+If you already created it – please continue. Otherwise, go back and execute [Create your local chaincode GitHub repository](#create-your-local-chaincode-github-repository) and [Deploy the chaincode](#deploy-the-chaincode) and then return here.
 
 **Note:** Make sure that the url points to your repo.
 ### Configure GitHub for CI/CD
@@ -233,13 +233,15 @@ If you already created it – please continue. Otherwise, go back and execute [C
         <img src="media/IBP4ICP-github-webhook-add.png">
      </p>
 
-   - Fill in the form with the following atributes:
+   - Fill in the form with the following attributes:  (The order here is for convenience only and not as it appears on the page): 
+   
+     **Secret:** Paste the GitHub secret token you copied in step 3 'Obtain GitHub Secret'	
 	
      **Payload URL:** https://linuxone.cloud.marist.edu/cloud/cloud/v1/blockchain/notify 	
 	
      **Content Type:** application/json
 	
-     **Secret:** Paste the GitHub secret token you copied in step 3 'Obtain GitHub Secret'
+    
      
    - Click the radio button `Just the push event.`
    - Click the `Add webhook` button
