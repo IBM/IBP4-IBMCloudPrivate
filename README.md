@@ -47,7 +47,8 @@ This code pattern can later be used as the foundation to your required needs; th
 
 [Deploy the chaincode](#deploy-the-chaincode)
 
-[Invoke transactions and queries](#invoke-transactions-and-queries)
+[Invoke transactions and 
+es](#invoke-transactions-and-queries)
 
 [Enable CI/CD (optional)](#enable-cicd-optional)
 
@@ -169,7 +170,7 @@ In this example we move 100 from entity ‘a’ to entity ‘b’.
 - Click the `Invoke` button
 - Inspect the result – a window will pop up with 'chaincode invoke successful'
 - Click on the `x` of the pop-up window to dismiss it
-- You can validate the transaction by quering again status of 'a' and confirm that the value is 0
+- You can validate the transaction by querying again status of 'a' and confirm that the value is 0
 
 **Congratulations! You have successfully performed transactions on your Blockchain network.**
 
@@ -233,7 +234,7 @@ If you already created it – please continue. Otherwise, go back and execute [C
         <img src="media/IBP4ICP-github-webhook-add.png">
      </p>
 
-   - Fill in the form with the following atributes:  (The order here is for convinence only and not as it appears on the page): 
+   - Fill in the form with the following attributes:  (The order here is for convenience only and not as it appears on the page): 
    
      **Secret:** Paste the GitHub secret token you copied in step 3 'Obtain GitHub Secret'	
 	
