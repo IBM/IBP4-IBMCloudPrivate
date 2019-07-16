@@ -54,7 +54,7 @@ This code pattern can later be used as the foundation to your required needs; th
 
 ## Provisioning IBM Blockchain Platform for ICP on LinuxONE Community Cloud
 
-Prior to following the steps described in this section, please request an `IBM Blockchain Platform for IBM Cloud Private access` from the LinuxONE Community Cloud [https://developer.ibm.com/linuxone/home-l1cc30-test/](https://developer.ibm.com/linuxone/home-l1cc30-test/). Once you have your access, you can resume your code pattern journey with the following:
+Prior to following the steps described in this section, please request an `IBM Blockchain Platform for IBM Cloud Private access` from the LinuxONE Community Cloud [https://developer.ibm.com/linuxone](https://developer.ibm.com/linuxone). Once you have your access, you can resume your code pattern journey with the following:
 1. Subscribe to IBM Blockchain Platform for IBM Cloud Private in the LinuxONE Community Cloud  
    - Click `IBM Blockchain Platform for IBM Cloud Private`
    - Fill out the form and submit
