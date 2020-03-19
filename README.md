@@ -264,7 +264,7 @@ Toggle the button below the CI/CD for the chaincode desired (you now have only o
   <img src="media/IBP4ICP-enable-CICD.png">
 </p>
 
-### Modifythe code locally and push changes to GitHub 
+### Modify the code locally and push changes to GitHub 
 	   
   1. In your favorite IDE, modify the chaincode_example02/src/chaincode_example02.go in your local copy of the chaincode_example02 (the cloned code).
        - Scroll to locate the `Init` function (line 37)
